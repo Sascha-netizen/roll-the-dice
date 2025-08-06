@@ -32,7 +32,6 @@
 
     <!-- Main element to hold the core sections of the page. It is not part of the grid structure. -->
     <main>
-      
       <!-- Section 1: carousel and text -->
       <section id="section1" class="container">
         <div class="row">
@@ -130,7 +129,16 @@
           <h2 class="col-12">
             <i class="fa-solid fa-dice-three"></i> Roll the dice
           </h2>
-          <div class="col-12">Dice</div>
+          <div class="col-12 d-flex justify-content-center align-items-center gap-3">
+            <button
+              type="button"
+              id="rollDiceBtn"
+              class="btn btn-success btn-lg"
+            >
+              <i class="fa-solid fa-dice"></i> Click to get rolling...
+            </button>
+            <span id="diceResult" class="fs-3 text-light">-</span>
+          </div>
         </div>
       </section>
     </main>
