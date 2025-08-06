@@ -17,18 +17,38 @@
 
     <!-- Link to css stylesheet -->
     <link rel="stylesheet" href="assets/css/style.css"> 
-
   </head>
 
-  <body>
-    <main>
-      <h1>This is a headline</h1>
-      <p>This is a paragraph and some text.</p>
+  <body class="d-flex flex-column min-vh-100">
 
+    <!-- Header with headline and carousel. -->
+    <header class="container">
+      <div class="row">
+        <h1 class="col-12">Headline</h1>
+        <div class="col-12">Carousel</div>
+      </div>
+    </header>
+
+
+    <!-- Main element holding the dice/generator. It is not part of the grid strucuture. -->
+    <main>
+      <section class="container">
+        <div class="row">
+          <h2 class="col-12">Roll the dice</h2>
+          <div class="col-12">Dice</div>
+        </div>
+      </section>
     </main>
 
 
-
+  <!-- Footer element -->
+   <footer class="mt-auto">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">Text content</div>
+      </div>
+    </div>
+   </footer>
 
 
 
