@@ -21,13 +21,31 @@ body {
 h1,
 h2,
 h3,
-p {
+p,
+div {
     font-family: var(--primary-font);
     color: var(--primary-color);
 }
 
+/* Main sections: text with carousel and dice/generator */
+#section1 {
+    border: 3px solid var(--secondary-color);
+    border-radius: 5px;
+    margin-bottom: 1.5rem;
+    padding: 10px;
+}
+
+/* Carousel images: size and styling */
+.carousel-item img {
+    display: block;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+
 /* Grid visualisation for testing */
-.container,
+/* .container,
 .row {
     border: 2px solid black;
 }
@@ -35,7 +53,7 @@ p {
 .col-12 {
     border: 2px solid white;
     background-color: lightyellow;
-}
+} */
 
 
 

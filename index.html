@@ -6,60 +6,160 @@
     <title>Roll the Dice | Game</title>
 
     <!-- Favicon downloaded from flacticon.com -->
-    <link rel="icon" href="assets/images/dice-favicon.png" type="image/png">
+    <link rel="icon" href="assets/images/dice-favicon.png" type="image/png" />
 
     <!-- Bootstrap css link -->
-        <link
+    <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
-      crossorigin="anonymous">
+      crossorigin="anonymous"
+    />
 
     <!-- Link to css stylesheet -->
-    <link rel="stylesheet" href="assets/css/style.css"> 
+    <link rel="stylesheet" href="assets/css/style.css" />
   </head>
 
   <body class="d-flex flex-column min-vh-100">
-
-    <!-- Header with headline and carousel. -->
-    <header class="container">
+    <!-- Header/Headline -->
+    <header class="container mb-4 mt-3">
       <div class="row">
-        <h1 class="col-12">Headline</h1>
-        <div class="col-12">Carousel</div>
+        <div class="col-12 col-xl-6">
+          <h1><i class="fa-solid fa-dice"></i> Welcome to roll the dice...</h1>
+        </div>
       </div>
     </header>
 
-
-    <!-- Main element holding the dice/generator. It is not part of the grid strucuture. -->
+    <!-- Main element to hold the core sections of the page. It is not part of the grid structure. -->
     <main>
-      <section class="container">
+      
+      <!-- Section 1: carousel and text -->
+      <section id="section1" class="container">
         <div class="row">
-          <h2 class="col-12">Roll the dice</h2>
+          <!-- Carousel -->
+          <div class="col-12 col-xl-6 mt-2">
+            <div id="carouselExampleIndicators" class="carousel slide">
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="assets/images/dice-one.webp"
+                    class="d-block w-100"
+                    alt="A fantasy game in vintage look."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="assets/images/dice-two.webp"
+                    class="d-block w-100"
+                    alt="A close-up screenshot of a Monopoly game set."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="assets/images/dice-three.webp"
+                    class="d-block w-100"
+                    alt="A close-up screenshot of kids playing a fantasy board game."
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Text -->
+          <div class="col-12 col-xl-6">
+            <p>
+              Whenever you're spending time with friends and want to play a
+              game, you suddenly realize no one brought a die. But don't worry —
+              your evening is far from ruined. Here's your automatic dice
+              roller. Let's get playing!
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 2: dice/generator -->
+
+      <section id="section2" class="container">
+        <div class="row">
+          <h2 class="col-12">
+            <i class="fa-solid fa-dice-three"></i> Roll the dice
+          </h2>
           <div class="col-12">Dice</div>
         </div>
       </section>
     </main>
 
-
-  <!-- Footer element -->
-   <footer class="mt-auto">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">Text content</div>
+    <!-- Footer element -->
+    <footer class="mt-auto py-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <i class="fa-solid fa-dice"></i> Don’t forget: even when you and
+            your friends part ways, the next game night is just around the
+            corner…
+          </div>
+        </div>
       </div>
-    </div>
-   </footer>
-
-
+    </footer>
 
     <!-- Bootstrap js link -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
-      crossorigin="anonymous"></script>
+      crossorigin="anonymous"
+    ></script>
 
     <!-- Font awesome link -->
-    <script src="https://kit.fontawesome.com/f4b12cb3d3.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/f4b12cb3d3.js"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- Link to index.js -->
     <script src="assets/js/index.js"></script>
