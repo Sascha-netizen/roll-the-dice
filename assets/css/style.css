@@ -1,0 +1,27 @@
+/* Google Fonts import: Fredoka (headlines) and Quicksand (text) */
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Quicksand:wght@300..700&display=swap');
+
+
+/* CSS Variables */
+:root {
+    --primary-font: "Fredoka", sans-serif;
+    --secondary-font: "Quicksand", sans-serif;
+    --primary-color: #D9DBDD;
+    --secondary-color: #BDBDC7;
+    --tertiary-color: #5F6C78;
+}
+
+/* Global Styles */
+body {
+    font-family: var(--secondary-font);
+    background-color: var(--tertiary-color);
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--primary-font);
+    color: var(--primary-color);
+}
+
