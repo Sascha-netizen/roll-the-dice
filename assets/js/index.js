@@ -1,3 +1,5 @@
+// Single die roll.
+
 let dice = ["1 / One", "2 / Two", "3 / Three", "4 / Four", "5 / Five", "6 / Six"];
 
 
@@ -8,3 +10,5 @@ let chosenNumber = dice[index]; document.getElementById("diceResult").textConten
 }
 
 document.getElementById('rollDiceBtn').addEventListener('click', rollDice);
+
+// Double dice roll.
